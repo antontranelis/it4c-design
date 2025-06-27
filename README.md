@@ -33,12 +33,15 @@ Any file inside `src/partials` is automatically registered, so these partials ar
 
 This repository includes sample pages for each sidebar item:
 
-- `feed.html`
+- `index.html` (feed)
 - `map.html`
 - `friends.html`
 - `groups.html`
 - `market.html`
 - `calendar.html`
+- `profile.html`
+- `settings.html`
+- `messages.html`
 
 Each page uses the partials so you can use them as a starting point when creating additional pages.
 
