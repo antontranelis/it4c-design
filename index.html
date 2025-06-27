@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Feed</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
@@ -17,8 +17,68 @@
       {{> navbar }}
 
       <div class="p-4">
-        <h1 class="text-2xl">Willkommen!</h1>
-        <p>Dein Hauptinhalt steht hier.</p>
+        <h1 class="text-2xl mb-4">Feed</h1>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="card bg-base-100 shadow">
+            <div class="card-body">
+              <div class="mb-2 flex items-center gap-2">
+                <img src="https://placekitten.com/40/40" class="h-10 w-10 rounded-full" alt="Avatar" />
+                <h2 class="card-title text-sm">Alice</h2>
+              </div>
+              <p>Enjoying the sunny weather today!</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow">
+            <div class="card-body">
+              <div class="mb-2 flex items-center gap-2">
+                <img src="https://placekitten.com/41/41" class="h-10 w-10 rounded-full" alt="Avatar" />
+                <h2 class="card-title text-sm">Bob</h2>
+              </div>
+              <p>Just finished a great book on web design.</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow">
+            <div class="card-body">
+              <div class="mb-2 flex items-center gap-2">
+                <img src="https://placekitten.com/42/42" class="h-10 w-10 rounded-full" alt="Avatar" />
+                <h2 class="card-title text-sm">Clara</h2>
+              </div>
+              <p>Here is a snapshot from my recent trip.</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow">
+            <div class="card-body">
+              <div class="mb-2 flex items-center gap-2">
+                <img src="https://placekitten.com/43/43" class="h-10 w-10 rounded-full" alt="Avatar" />
+                <h2 class="card-title text-sm">Daniel</h2>
+              </div>
+              <p>Does anyone have podcast recommendations?</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow">
+            <div class="card-body">
+              <div class="mb-2 flex items-center gap-2">
+                <img src="https://placekitten.com/44/44" class="h-10 w-10 rounded-full" alt="Avatar" />
+                <h2 class="card-title text-sm">Elena</h2>
+              </div>
+              <p>Baking some cookies this weekend!</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow">
+            <div class="card-body">
+              <div class="mb-2 flex items-center gap-2">
+                <img src="https://placekitten.com/45/45" class="h-10 w-10 rounded-full" alt="Avatar" />
+                <h2 class="card-title text-sm">Fred</h2>
+              </div>
+              <p>Started learning a new programming language.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
