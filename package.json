@@ -10,12 +10,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module", 
+  "type": "module",
   "devDependencies": {
-    "vite": "^7.0.0",
-    "tailwindcss": "^4.1.11",
-    "daisyui": "^5.0.43",
     "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.32"
+    "daisyui": "^5.0.43",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^4.1.11",
+    "vite": "^7.0.0",
+    "vite-plugin-handlebars": "^2.0.0"
   }
 }
