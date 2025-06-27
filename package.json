@@ -1,0 +1,21 @@
+{
+  "name": "it4c-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^7.0.0",
+    "tailwindcss": "^4.1.11",
+    "daisyui": "^5.0.43",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  }
+}
