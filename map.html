@@ -25,11 +25,27 @@
   </div>
 
   <script>
-    new maplibregl.Map({
+    const map = new maplibregl.Map({
       container: 'map',
       style: 'https://demotiles.maplibre.org/style.json',
       center: [0, 0],
-      zoom: 2
+      zoom: 2,
+      projection: 'globe'
+    });
+
+    map.on('load', () => {
+      const locations = [
+        { coords: [13.405, 52.52], label: 'Berlin' },
+        { coords: [-74.006, 40.7128], label: 'New York' },
+        { coords: [151.2093, -33.8688], label: 'Sydney' }
+      ];
+
+      locations.forEach(({ coords, label }) => {
+        new maplibregl.Marker()
+          .setLngLat(coords)
+          .setPopup(new maplibregl.Popup().setHTML(`<p>${label}</p>`))
+          .addTo(map);
+      });
     });
   </script>
 </body>
