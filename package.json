@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module", 
   "devDependencies": {
     "vite": "^7.0.0",
     "tailwindcss": "^4.1.11",
