@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
+  <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
 </head>
 
 <body>
@@ -16,14 +18,20 @@
     <div class="drawer-content">
       {{> navbar }}
 
-      <div class="p-4">
-        <h1 class="text-2xl">Map</h1>
-        <p>Explore locations and events near you.</p>
-      </div>
+      <div id="map" style="height: calc(100vh - var(--navbar-height, 4rem));"></div>
     </div>
 
     {{> sidebar }}
   </div>
+
+  <script>
+    new maplibregl.Map({
+      container: 'map',
+      style: 'https://demotiles.maplibre.org/style.json',
+      center: [0, 0],
+      zoom: 2
+    });
+  </script>
 </body>
 
 </html>
