@@ -1,8 +1,6 @@
 # Unified Ocelot/Utopia Specification
 
-This repository contains the initial specification for merging the existing `ocelot.social` and `Utopia Map` projects. The former prototype lives in the [`prototyp`](prototyp/) directory. All new work should extend the documents in `spec/`.
-
-The goal is to define common data models, APIs and design tokens so that both applications can share features and components.
+This repository contains the initial specification for merging the existing `ocelot.social` and `Utopia Map` projects. The goal is to define common data models, APIs and design tokens so that both applications can share features and components.
 
 - `spec/data-models.yaml` – core entities in YAML form
 - `spec/openapi.yaml` – skeleton API description
