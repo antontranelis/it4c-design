@@ -1,0 +1,49 @@
+openapi: 3.1.0
+info:
+  title: Unified API
+  version: 0.1.0
+paths:
+  /posts:
+    get:
+      summary: List posts
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Post'
+    post:
+      summary: Create a post
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Post'
+      responses:
+        '201':
+          description: Created
+components:
+  schemas:
+    Post:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        authorId:
+          type: string
+          format: uuid
+        title:
+          type: string
+        text:
+          type: string
+        bannerImage:
+          type: string
+          format: uri
+        createdAt:
+          type: string
+          format: date-time

@@ -1,0 +1,24 @@
+entities:
+  User:
+    id: UUID
+    username: string
+    email: string
+    profilePicture: URL
+    createdAt: datetime
+    reputation: integer
+  Post:
+    id: UUID
+    authorId: UUID
+    title: string
+    text: string
+    bannerImage: URL
+    createdAt: datetime
+  MapEntry:
+    id: UUID
+    authorId: UUID
+    location:
+      lat: number
+      lon: number
+    title: string
+    description: string
+    createdAt: datetime
