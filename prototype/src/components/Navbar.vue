@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-base-100 shadow-sm shadow-lg">
+  <div class="navbar bg-base-100 shadow-sm shadow-lg flex">
     <div class="flex-none">
       <!-- Toggle-Button für den Drawer -->
       <label for="my-drawer" class="btn btn-square btn-ghost drawer-button">
@@ -11,7 +11,7 @@
     <div class="flex-none">
       <RouterLink to="/" class="btn btn-ghost text-xl mx-2">IT4C</RouterLink>
     </div>
-    <div class="flex-1 gap-2">
+    <div class="flex-1 gap-2 flex">
       <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
       <button class="btn btn-ghost btn-square ">
         <div class="indicator">
