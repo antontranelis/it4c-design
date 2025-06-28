@@ -1,32 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feed</title>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-</head>
-
-<body>
-  <div class="drawer">
-    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content bg-base-200">
-      {{> navbar }}
-
-      <div class="p-4 flex justify-center items-center">
-        <div class="max-w-8xl">
-          <h1 class="text-2xl mb-4">Feed</h1>
-          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" id="posts-container"></div>
-        </div>
-      </div>
-    </div>
-
-    {{> sidebar }}
-  </div>
-  <script type="module" src="feed.js"></script>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT4C Prototype</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
