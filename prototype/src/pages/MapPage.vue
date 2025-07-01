@@ -1,6 +1,8 @@
 <template>
-  <div class="p-4 h-full">
-    <div id="map" class="w-full h-full rounded-box"></div>
+  <div class="p-4 h-full flex flex-col">
+    <div class="card flex-1 bg-base-100 shadow">
+      <div id="map" class="h-full w-full rounded-box"></div>
+    </div>
   </div>
 </template>
 
