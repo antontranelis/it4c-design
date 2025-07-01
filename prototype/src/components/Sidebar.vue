@@ -7,7 +7,7 @@ defineProps<{ open: boolean }>()
 <template>
   <div
     :class="[
-      'h-full bg-base-200 shadow-lg overflow-hidden transition-[width] duration-300',
+      'h-full bg-base-100 z-30 shadow-lg overflow-hidden transition-[width] duration-300',
       open ? 'w-64' : 'w-0'
     ]"
   >
