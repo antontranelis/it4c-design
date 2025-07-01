@@ -1,6 +1,6 @@
 [
   {
-    "banner": "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg",
+    "banner": "https://placehold.co/600x400",
     "title": "Hiking Adventure",
     "text": "Exploring the beautiful mountain trails today!",
     "user": {
@@ -9,39 +9,39 @@
     }
   },
   {
-    "banner": "https://img.daisyui.com/images/stock/photo-1508921912186-1d1a45ebb3c1.webp",
+    "banner": "https://placehold.co/600x400",
     "title": "Delicious Breakfast",
     "text": "Nothing beats homemade pancakes on a Sunday morning.",
     "user": {
       "username": "bob",
-      "profile": "https://img.daisyui.com/images/stock/photo-1506794778202-cad84cf45f1d.webp"
+      "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-1.jpg"
     }
   },
   {
-    "banner": "https://img.daisyui.com/images/stock/photo-1523475496153-3d6cc2959a31.webp",
+    "banner": "https://placehold.co/600x400",
     "title": "City Lights",
     "text": "Captured the skyline during my evening walk downtown.",
     "user": {
       "username": "charlie",
-      "profile": "https://img.daisyui.com/images/stock/photo-1529626455594-4ff0802cfb7e.webp"
+      "profile": "https://techzaa.in/brandui/assets/images/users/avatar-2.jpg"
     }
   },
   {
-    "banner": "https://img.daisyui.com/images/stock/photo-1529626455594-4ff0802cfb7e.jpg",
+    "banner": "https://placehold.co/600x400",
     "title": "Road Trip",
     "text": "Starting our cross-country journey today!",
     "user": {
       "username": "diana",
-      "profile": "https://img.daisyui.com/images/stock/photo-1494790108377-be9c29b29330.webp"
+      "profile": "https://techzaa.in/brandui/assets/images/users/avatar-3.jpg"
     }
   },
   {
-    "banner": "https://img.daisyui.com/images/stock/photo-1525164761484-f3c3b1f1cb4b.webp",
+    "banner": "https://placehold.co/600x400",
     "title": "Garden Harvest",
     "text": "Fresh veggies straight from the backyard garden.",
     "user": {
       "username": "edgar",
-      "profile": "https://img.daisyui.com/images/stock/photo-1517841905240-472988babdf9.webp"
+      "profile": "https://techzaa.in/brandui/assets/images/users/avatar-4.jpg"
     }
   }
 ]
