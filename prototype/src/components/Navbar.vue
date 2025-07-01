@@ -9,7 +9,7 @@
       </button>
     </div>
     <div class="flex-none">
-      <RouterLink to="/" class="btn btn-ghost text-xl mx-2">IT4C</RouterLink>
+      <RouterLink to="/" class="btn btn-ghost text-xl mx-2">Design System</RouterLink>
     </div>
     <div class="flex-1 gap-2 flex">
       <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
