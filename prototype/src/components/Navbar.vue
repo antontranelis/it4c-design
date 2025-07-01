@@ -1,12 +1,12 @@
 <template>
   <div class="navbar bg-base-100 shadow-sm shadow-lg flex">
     <div class="flex-none">
-      <!-- Toggle-Button für den Drawer -->
-      <label for="my-drawer" class="btn btn-square btn-ghost drawer-button">
+      <!-- Toggle button for sidebar -->
+      <button class="btn btn-square btn-ghost" @click="emit('toggle-sidebar')">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
-      </label>
+      </button>
     </div>
     <div class="flex-none">
       <RouterLink to="/" class="btn btn-ghost text-xl mx-2">IT4C</RouterLink>
@@ -69,4 +69,5 @@
 
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+const emit = defineEmits(['toggle-sidebar'])
 </script>
