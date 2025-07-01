@@ -20,6 +20,7 @@ onMounted(async () => {
     console.error('Failed to load items', err)
   }
 })
+
 </script>
 
 <template>

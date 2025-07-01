@@ -19,6 +19,7 @@ onMounted(async () => {
     console.error('Failed to load messages', err)
   }
 })
+
 const newMsg = ref('')
 
 function send() {
