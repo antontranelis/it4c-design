@@ -1,16 +1,24 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import Navbar from './components/Navbar.vue'
 import Sidebar from './components/Sidebar.vue'
+
+const sidebarOpen = ref(false)
 </script>
 
 <template>
-  <div class="drawer">
-    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content bg-base-200">
-      <Navbar />
-      <router-view />
+  <div class="flex h-screen overflow-hidden">
+    <div class="flex flex-col flex-1 overflow-hidden">
+      <Navbar @toggle-sidebar="sidebarOpen = !sidebarOpen" />
+<div class="flex h-full">
+      <Sidebar :open="sidebarOpen" />
+      <div
+        class="flex-1 bg-base-200 transition-all duration-300 h-full"
+      >
+        <router-view />
+      </div>
     </div>
-    <Sidebar />
+    </div>
   </div>
 </template>
 
