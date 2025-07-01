@@ -17,7 +17,8 @@ onMounted(async () => {
   try {
     const res = await fetch('/posts.json')
     if (res.ok) {
-      posts.value = await res.json()
+      const data = await res.json()
+      posts.value = data.posts ?? data
     } else {
       console.error('Failed to load posts')
     }

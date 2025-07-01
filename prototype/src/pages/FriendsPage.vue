@@ -1,27 +1,24 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
 interface Friend {
   name: string
   avatar: string
   status: string
 }
 
-const friends: Friend[] = [
-  {
-    name: 'Alice',
-    avatar: 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp',
-    status: 'online'
-  },
-  {
-    name: 'Bob',
-    avatar: 'https://img.daisyui.com/images/stock/photo-1506794778202-cad84cf45f1d.webp',
-    status: 'offline'
-  },
-  {
-    name: 'Charlie',
-    avatar: 'https://img.daisyui.com/images/stock/photo-1529626455594-4ff0802cfb7e.webp',
-    status: 'busy'
+const friends = ref<Friend[]>([])
+
+onMounted(async () => {
+  try {
+    const res = await fetch('/posts.json')
+    if (res.ok) {
+      const data = await res.json()
+      friends.value = data.friends
+    }
+  } catch (err) {
+    console.error('Failed to load friends', err)
   }
-]
+})
 </script>
 
 <template>

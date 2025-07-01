@@ -1,16 +1,25 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 interface Message {
   from: 'me' | 'them'
   text: string
 }
 
-const messages = ref<Message[]>([
-  { from: 'them', text: 'Hi there!' },
-  { from: 'me', text: 'Hello!' },
-  { from: 'them', text: 'How are you?' }
-])
+const messages = ref<Message[]>([])
+
+onMounted(async () => {
+  try {
+    const res = await fetch('/posts.json')
+    if (res.ok) {
+      const data = await res.json()
+      messages.value = data.messages
+    }
+  } catch (err) {
+    console.error('Failed to load messages', err)
+  }
+})
+
 const newMsg = ref('')
 
 function send() {

@@ -1,27 +1,26 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
+
 interface Group {
   name: string
   description: string
   banner: string
 }
 
-const groups: Group[] = [
-  {
-    name: 'Hiking Club',
-    description: 'Join us for weekly adventures in nature.',
-    banner: 'https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg'
-  },
-  {
-    name: 'Book Lovers',
-    description: 'Discuss your favourite reads with others.',
-    banner: 'https://img.daisyui.com/images/stock/photo-1523475496153-3d6cc2959a31.webp'
-  },
-  {
-    name: 'Cooking Fans',
-    description: 'Share and learn new recipes every week.',
-    banner: 'https://img.daisyui.com/images/stock/photo-1508921912186-1d1a45ebb3c1.webp'
+const groups = ref<Group[]>([])
+
+onMounted(async () => {
+  try {
+    const res = await fetch('/posts.json')
+    if (res.ok) {
+      const data = await res.json()
+      groups.value = data.groups
+    }
+  } catch (err) {
+    console.error('Failed to load groups', err)
   }
-]
+})
+
 </script>
 
 <template>

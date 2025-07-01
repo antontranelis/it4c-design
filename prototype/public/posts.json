@@ -1,47 +1,159 @@
-[
-  {
-    "banner": "https://placehold.co/600x400",
-    "title": "Hiking Adventure",
-    "text": "Exploring the beautiful mountain trails today!",
-    "user": {
-      "username": "alice",
-      "profile": "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+{
+  "posts": [
+    {
+      "banner": "https://placehold.co/600x400",
+      "title": "Hiking Adventure",
+      "text": "Exploring the beautiful mountain trails today!",
+      "user": {
+        "username": "alice",
+        "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-1.jpg"
+      }
+    },
+    {
+      "banner": "https://placehold.co/600x400",
+      "title": "Delicious Breakfast",
+      "text": "Nothing beats homemade pancakes on a Sunday morning.",
+      "user": {
+        "username": "bob",
+        "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-2.jpg"
+      }
+    },
+    {
+      "banner": "https://placehold.co/600x400",
+      "title": "City Lights",
+      "text": "Captured the skyline during my evening walk downtown.",
+      "user": {
+        "username": "charlie",
+        "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-3.jpg"
+      }
+    },
+    {
+      "banner": "https://placehold.co/600x400",
+      "title": "Road Trip",
+      "text": "Starting our cross-country journey today!",
+      "user": {
+        "username": "diana",
+        "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-4.jpg"
+      }
+    },
+    {
+      "banner": "https://placehold.co/600x400",
+      "title": "Garden Harvest",
+      "text": "Fresh veggies straight from the backyard garden.",
+      "user": {
+        "username": "edgar",
+        "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-5.jpg"
+      }
     }
+  ],
+  "friends": [
+    {
+      "name": "Alice",
+      "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-1.jpg",
+      "status": "online"
+    },
+    {
+      "name": "Bob",
+      "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-2.jpg",
+      "status": "offline"
+    },
+    {
+      "name": "Charlie",
+      "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-3.jpg",
+      "status": "busy"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hiking Club",
+      "description": "Join us for weekly adventures in nature.",
+      "banner": "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
+    },
+    {
+      "name": "Book Lovers",
+      "description": "Discuss your favourite reads with others.",
+      "banner": "https://img.daisyui.com/images/stock/photo-1523475496153-3d6cc2959a31.webp"
+    },
+    {
+      "name": "Cooking Fans",
+      "description": "Share and learn new recipes every week.",
+      "banner": "https://img.daisyui.com/images/stock/photo-1508921912186-1d1a45ebb3c1.webp"
+    }
+  ],
+  "items": [
+    {
+      "name": "Mountain Bike",
+      "price": "$500",
+      "image": "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
+    },
+    {
+      "name": "Coffee Maker",
+      "price": "$75",
+      "image": "https://img.daisyui.com/images/stock/photo-1529626455594-4ff0802cfb7e.jpg"
+    },
+    {
+      "name": "Headphones",
+      "price": "$120",
+      "image": "https://img.daisyui.com/images/stock/photo-1508921912186-1d1a45ebb3c1.webp"
+    }
+  ],
+  "events": [
+    {
+      "date": "2024-06-10",
+      "title": "Meetup",
+      "description": "Local community gathering"
+    },
+    {
+      "date": "2024-06-15",
+      "title": "Workshop",
+      "description": "Vue.js basics"
+    },
+    {
+      "date": "2024-06-22",
+      "title": "Hackathon",
+      "description": "Build cool projects together"
+    }
+  ],
+  "messages": [
+    { "from": "them", "text": "Hi there!" },
+    { "from": "me", "text": "Hello!" },
+    { "from": "them", "text": "How are you?" }
+  ],
+  "user": {
+    "name": "John Doe",
+    "bio": "Enthusiastic traveler and photographer.",
+    "avatar": "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
   },
-  {
-    "banner": "https://placehold.co/600x400",
-    "title": "Delicious Breakfast",
-    "text": "Nothing beats homemade pancakes on a Sunday morning.",
-    "user": {
-      "username": "bob",
-      "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-1.jpg"
+  "locations": [
+    {
+      "id": 1,
+      "coordinates": [13.404954, 52.520008],
+      "title": "Berlin",
+      "description": "Berlin is the capital of Germany"
+    },
+    {
+      "id": 2,
+      "coordinates": [11.581981, 48.135125],
+      "title": "Munich",
+      "description": "Munich is a city in Bavaria"
+    },
+    {
+      "id": 3,
+      "coordinates": [9.993682, 53.551086],
+      "title": "Hamburg",
+      "description": "Hamburg is a port city"
+    },
+    {
+      "id": 4,
+      "coordinates": [8.682127, 50.110924],
+      "title": "Frankfurt",
+      "description": "Frankfurt is a financial hub"
+    },
+    {
+      "id": 5,
+      "coordinates": [6.960279, 50.937531],
+      "title": "Cologne",
+      "description": "Cologne is famous for its cathedral"
     }
-  },
-  {
-    "banner": "https://placehold.co/600x400",
-    "title": "City Lights",
-    "text": "Captured the skyline during my evening walk downtown.",
-    "user": {
-      "username": "charlie",
-      "profile": "https://techzaa.in/brandui/assets/images/users/avatar-2.jpg"
-    }
-  },
-  {
-    "banner": "https://placehold.co/600x400",
-    "title": "Road Trip",
-    "text": "Starting our cross-country journey today!",
-    "user": {
-      "username": "diana",
-      "profile": "https://techzaa.in/brandui/assets/images/users/avatar-3.jpg"
-    }
-  },
-  {
-    "banner": "https://placehold.co/600x400",
-    "title": "Garden Harvest",
-    "text": "Fresh veggies straight from the backyard garden.",
-    "user": {
-      "username": "edgar",
-      "profile": "https://techzaa.in/brandui/assets/images/users/avatar-4.jpg"
-    }
-  }
-]
+  ]
+}

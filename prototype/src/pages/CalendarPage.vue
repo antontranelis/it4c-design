@@ -1,15 +1,26 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
+
 interface Event {
   date: string
   title: string
   description: string
 }
 
-const events: Event[] = [
-  { date: '2024-06-10', title: 'Meetup', description: 'Local community gathering' },
-  { date: '2024-06-15', title: 'Workshop', description: 'Vue.js basics' },
-  { date: '2024-06-22', title: 'Hackathon', description: 'Build cool projects together' }
-]
+const events = ref<Event[]>([])
+
+onMounted(async () => {
+  try {
+    const res = await fetch('/posts.json')
+    if (res.ok) {
+      const data = await res.json()
+      events.value = data.events
+    }
+  } catch (err) {
+    console.error('Failed to load events', err)
+  }
+})
+
 </script>
 
 <template>

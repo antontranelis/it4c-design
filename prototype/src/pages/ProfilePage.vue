@@ -1,14 +1,31 @@
 <script setup lang="ts">
-const user = {
-  name: 'John Doe',
-  bio: 'Enthusiastic traveler and photographer.',
-  avatar: 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+import { ref, onMounted } from 'vue'
+
+interface User {
+  name: string
+  bio: string
+  avatar: string
 }
+
+const user = ref<User | null>(null)
+
+onMounted(async () => {
+  try {
+    const res = await fetch('/posts.json')
+    if (res.ok) {
+      const data = await res.json()
+      user.value = data.user
+    }
+  } catch (err) {
+    console.error('Failed to load user', err)
+  }
+})
+
 </script>
 
 <template>
   <div class="p-4 flex justify-center">
-    <div class="card w-full max-w-md bg-base-100 shadow">
+    <div v-if="user" class="card w-full max-w-md bg-base-100 shadow">
       <figure class="px-10 pt-10">
         <img :src="user.avatar" :alt="user.name" class="rounded-full w-32" />
       </figure>

@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 import maplibregl, { Map } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
@@ -20,31 +20,32 @@ interface Location {
   description: string
 }
 
-const locations: Location[] = [
-  { id: 1, coordinates: [13.404954, 52.520008], title: 'Berlin', description: 'Berlin is the capital of Germany' },
-  { id: 2, coordinates: [11.581981, 48.135125], title: 'Munich', description: 'Munich is a city in Bavaria' },
-  { id: 3, coordinates: [9.993682, 53.551086], title: 'Hamburg', description: 'Hamburg is a port city' },
-  { id: 4, coordinates: [8.682127, 50.110924], title: 'Frankfurt', description: 'Frankfurt is a financial hub' },
-  { id: 5, coordinates: [6.960279, 50.937531], title: 'Cologne', description: 'Cologne is famous for its cathedral' }
-]
+const locations = ref<Location[]>([])
+let geojson: any
 
-const geojson = {
-  type: 'FeatureCollection',
-  features: locations.map((l) => ({
-    type: 'Feature',
-    properties: {
-      id: l.id,
-      title: l.title,
-      description: l.description
-    },
-    geometry: {
-      type: 'Point',
-      coordinates: l.coordinates
+onMounted(async () => {
+  try {
+    const res = await fetch('/posts.json')
+    if (res.ok) {
+      const data = await res.json()
+      locations.value = data.locations
+      geojson = {
+        type: 'FeatureCollection',
+        features: locations.value.map((l) => ({
+          type: 'Feature',
+          properties: {
+            id: l.id,
+            title: l.title,
+            description: l.description
+          },
+          geometry: { type: 'Point', coordinates: l.coordinates }
+        }))
+      }
     }
-  }))
-}
+  } catch (err) {
+    console.error('Failed to load locations', err)
+  }
 
-onMounted(() => {
   map = new maplibregl.Map({
     container: 'map',
     style: 'https://api.maptiler.com/maps/basic-v2/style.json?key=SD4r2w2iq45jOTGJi0lm',

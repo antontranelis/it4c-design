@@ -1,27 +1,26 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
+
 interface Item {
   name: string
   price: string
   image: string
 }
 
-const items: Item[] = [
-  {
-    name: 'Mountain Bike',
-    price: '$500',
-    image: 'https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg'
-  },
-  {
-    name: 'Coffee Maker',
-    price: '$75',
-    image: 'https://img.daisyui.com/images/stock/photo-1529626455594-4ff0802cfb7e.jpg'
-  },
-  {
-    name: 'Headphones',
-    price: '$120',
-    image: 'https://img.daisyui.com/images/stock/photo-1508921912186-1d1a45ebb3c1.webp'
+const items = ref<Item[]>([])
+
+onMounted(async () => {
+  try {
+    const res = await fetch('/posts.json')
+    if (res.ok) {
+      const data = await res.json()
+      items.value = data.items
+    }
+  } catch (err) {
+    console.error('Failed to load items', err)
   }
-]
+})
+
 </script>
 
 <template>
