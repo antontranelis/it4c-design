@@ -47,7 +47,7 @@ const geojson = {
 onMounted(() => {
   map = new maplibregl.Map({
     container: 'map',
-    style: 'https://demotiles.maplibre.org/style.json',
+    style: 'https://api.maptiler.com/maps/basic-v2/style.json?key=SD4r2w2iq45jOTGJi0lm',
     center: [10.451526, 51.165691],
     zoom: 5
   })
