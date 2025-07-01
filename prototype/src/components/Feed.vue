@@ -28,7 +28,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div id="posts-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  <div id="posts-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl w-full">
     <div v-for="post in posts" :key="post.title" class="card bg-base-100 w-full shadow-sm">
       <figure>
         <img :src="post.banner" :alt="post.title" />

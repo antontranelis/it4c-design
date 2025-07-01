@@ -1,6 +1,5 @@
 <template>
   <div class="navbar bg-base-100 z-20 shadow-lg flex">
-  <div class="navbar bg-base-100 shadow-lg flex">
     <div class="flex-none">
       <!-- Toggle button for sidebar -->
       <button class="btn btn-square btn-ghost" @click="emit('toggle-sidebar')">
