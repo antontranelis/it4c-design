@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-base-100 shadow-sm shadow-lg flex">
+  <div class="navbar bg-base-100 shadow-lg flex">
     <div class="flex-none">
       <!-- Toggle-Button für den Drawer -->
       <label for="my-drawer" class="btn btn-square btn-ghost drawer-button">
