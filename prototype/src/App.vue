@@ -9,14 +9,16 @@ const sidebarOpen = ref(false)
 <template>
   <div class="flex h-screen overflow-hidden">
     <Sidebar :open="sidebarOpen" />
-    <div
-      :class="[
-        'flex-1 bg-base-200 transition-all duration-300',
-        sidebarOpen ? 'ml-64' : 'ml-0'
-      ]"
-    >
+    <div class="flex flex-col flex-1 overflow-hidden">
       <Navbar @toggle-sidebar="sidebarOpen = !sidebarOpen" />
-      <router-view />
+      <div
+        :class="[
+          'flex-1 bg-base-200 transition-all duration-300',
+          sidebarOpen ? 'ml-64' : 'ml-0'
+        ]"
+      >
+        <router-view />
+      </div>
     </div>
   </div>
 </template>
