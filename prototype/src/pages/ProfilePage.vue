@@ -24,7 +24,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="p-4 flex justify-center">
+  <div class="flex justify-center">
     <div v-if="user" class="card w-full max-w-md bg-base-100 shadow">
       <figure class="px-10 pt-10">
         <img :src="user.avatar" :alt="user.name" class="rounded-full w-32" />

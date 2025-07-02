@@ -6,7 +6,7 @@ const darkMode = ref(false)
 </script>
 
 <template>
-  <form class="p-4 space-y-4 max-w-md">
+  <form class="space-y-4 max-w-md">
     <div class="form-control">
       <label class="label cursor-pointer">
         <span class="label-text">Enable notifications</span>

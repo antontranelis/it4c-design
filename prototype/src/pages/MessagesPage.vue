@@ -30,7 +30,7 @@ function send() {
 </script>
 
 <template>
-  <div class="p-4 flex flex-col gap-4 h-full">
+  <div class="flex flex-col gap-4 h-full">
     <div class="flex-1 overflow-y-auto space-y-2">
       <div
         v-for="(msg, i) in messages"

@@ -5,7 +5,7 @@
       "title": "Hiking Adventure",
       "text": "Exploring the beautiful mountain trails today!",
       "user": {
-        "username": "alice",
+        "username": "Alice",
         "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-1.jpg"
       }
     },
@@ -14,7 +14,7 @@
       "title": "Delicious Breakfast",
       "text": "Nothing beats homemade pancakes on a Sunday morning.",
       "user": {
-        "username": "bob",
+        "username": "Bob",
         "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-2.jpg"
       }
     },
@@ -23,7 +23,7 @@
       "title": "City Lights",
       "text": "Captured the skyline during my evening walk downtown.",
       "user": {
-        "username": "charlie",
+        "username": "Charlie",
         "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-3.jpg"
       }
     },
@@ -32,7 +32,7 @@
       "title": "Road Trip",
       "text": "Starting our cross-country journey today!",
       "user": {
-        "username": "diana",
+        "username": "Diana",
         "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-4.jpg"
       }
     },
@@ -41,7 +41,7 @@
       "title": "Garden Harvest",
       "text": "Fresh veggies straight from the backyard garden.",
       "user": {
-        "username": "edgar",
+        "username": "Edgar",
         "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-5.jpg"
       }
     }
@@ -67,34 +67,34 @@
     {
       "name": "Hiking Club",
       "description": "Join us for weekly adventures in nature.",
-      "banner": "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
+      "banner": "https://plus.unsplash.com/premium_photo-1677002240252-af3f88114efc?q=80&w=2250&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "name": "Book Lovers",
       "description": "Discuss your favourite reads with others.",
-      "banner": "https://img.daisyui.com/images/stock/photo-1523475496153-3d6cc2959a31.webp"
+      "banner": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "name": "Cooking Fans",
       "description": "Share and learn new recipes every week.",
-      "banner": "https://img.daisyui.com/images/stock/photo-1508921912186-1d1a45ebb3c1.webp"
+      "banner": "https://images.unsplash.com/photo-1514986888952-8cd320577b68?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ],
   "items": [
     {
       "name": "Mountain Bike",
       "price": "$500",
-      "image": "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
+      "image": "https://images.unsplash.com/uploads/14122621859313b34d52b/37e28531?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "name": "Coffee Maker",
       "price": "$75",
-      "image": "https://img.daisyui.com/images/stock/photo-1529626455594-4ff0802cfb7e.jpg"
+      "image": "https://plus.unsplash.com/premium_photo-1664297862120-9dc0f3d554c7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "name": "Headphones",
       "price": "$120",
-      "image": "https://img.daisyui.com/images/stock/photo-1508921912186-1d1a45ebb3c1.webp"
+      "image": "https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?q=80&w=2226&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ],
   "events": [

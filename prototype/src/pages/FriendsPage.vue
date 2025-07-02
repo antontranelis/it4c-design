@@ -22,7 +22,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="p-4">
+  <div class="">
     <ul class="space-y-2">
       <li
         v-for="friend in friends"

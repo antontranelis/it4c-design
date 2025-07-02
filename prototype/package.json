@@ -9,18 +9,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.17",
-    "vue-router": "^4.5.1",
-    "maplibre-gl": "^3.5.2"
+    "@headlessui/vue": "^1.7.23",
+    "@heroicons/vue": "^2.2.0",
+    "maplibre-gl": "^3.5.2",
+    "oh-vue-icons": "1.0.0-rc3",
+    "vue": "link:@heroicons/vue",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.11",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/tsconfig": "^0.7.0",
+    "daisyui": "^5.0.43",
+    "tailwindcss": "^4.1.11",
     "typescript": "~5.8.3",
     "vite": "^7.0.0",
-    "vue-tsc": "^2.2.10",
-    "@tailwindcss/vite": "^4.1.11",
-    "daisyui": "^5.0.43",
-    "tailwindcss": "^4.1.11"
+    "vue-tsc": "^2.2.10"
   }
 }

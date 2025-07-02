@@ -13,7 +13,7 @@ const sidebarOpen = ref(false)
 <div class="flex h-full">
       <Sidebar :open="sidebarOpen" />
       <div
-        class="flex-1 bg-base-200 transition-all duration-300 h-full"
+        class="flex-1 bg-base-200 transition-all duration-300 overflow-auto p-4"
       >
         <router-view />
       </div>
