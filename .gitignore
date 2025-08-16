@@ -128,10 +128,35 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# yarn v2
+# Yarn Berry / PnP
 .yarn/cache
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Keep these for Yarn Berry
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Node modules (shouldn't exist with PnP but just in case)
 **/node_modules
+
+# Build outputs
+**/dist
+build
+
+# IDE and tooling
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+
+# Temporary files
+.tmp
+.temp
+.aider*

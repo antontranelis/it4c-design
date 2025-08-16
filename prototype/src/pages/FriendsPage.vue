@@ -22,7 +22,9 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="">
+    <div class="flex justify-center max-w-8xl w-full">
+
+  <div class="w-6xl">
     <ul class="space-y-2">
       <li
         v-for="friend in friends"
@@ -42,4 +44,5 @@ onMounted(async () => {
       </li>
     </ul>
   </div>
+</div>
 </template>

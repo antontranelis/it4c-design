@@ -1,0 +1,10 @@
+{
+  "name": "it4c-design-workspace",
+  "private": true,
+  "packageManager": "yarn@4.9.2",
+  "workspaces": [
+    "app",
+    "lib",
+    "docs"
+  ]
+}

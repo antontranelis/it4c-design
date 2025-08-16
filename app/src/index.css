@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Use workspace reference for library components */
+@source "@it4c-design/components/src/*.tsx";

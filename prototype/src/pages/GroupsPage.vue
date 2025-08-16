@@ -24,6 +24,9 @@ onMounted(async () => {
 </script>
 
 <template>
+<div class="flex justify-center w-full">
+
+<div class="w-6xl">
   <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
     <div
       v-for="group in groups"
@@ -42,4 +45,6 @@ onMounted(async () => {
       </div>
     </div>
   </div>
+</div>
+      </div>
 </template>

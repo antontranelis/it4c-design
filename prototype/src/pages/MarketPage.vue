@@ -24,7 +24,10 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+<div class="flex justify-center w-full">
+
+
+  <div class="grid gap-4 w-6xl sm:grid-cols-2 lg:grid-cols-3">
     <div
       v-for="item in items"
       :key="item.name"
@@ -39,5 +42,6 @@ onMounted(async () => {
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
