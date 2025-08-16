@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@it4c-design/components": "workspace:*",
+    "@it4c-design/components": "file:../lib",
     "@tailwindcss/vite": "^4.1.12",
     "@types/node": "^24.3.0",
     "daisyui": "^5.0.50",

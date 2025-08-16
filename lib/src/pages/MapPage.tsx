@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import maplibregl, { Map } from 'maplibre-gl'
+import * as maplibregl from 'maplibre-gl'
+import { Map } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
 interface Location {
@@ -41,21 +42,23 @@ export default function MapPage() {
       zoom: 5
     })
 
-    map.current.addControl(new maplibregl.NavigationControl(), 'top-right')
+    if (map.current) {
+      map.current.addControl(new maplibregl.NavigationControl(), 'top-right')
 
-    map.current.on('load', () => {
-      locations.forEach((loc) => {
-        if (map.current) {
-          new maplibregl.Marker()
-            .setLngLat(loc.coordinates)
-            .setPopup(
-              new maplibregl.Popup({ offset: 25 })
-                .setHTML(`<strong>${loc.title}</strong><p>${loc.description}</p>`)
-            )
-            .addTo(map.current)
-        }
+      map.current.on('load', () => {
+        locations.forEach((loc) => {
+          if (map.current) {
+            new maplibregl.Marker()
+              .setLngLat(loc.coordinates)
+              .setPopup(
+                new maplibregl.Popup({ offset: 25 })
+                  .setHTML(`<strong>${loc.title}</strong><p>${loc.description}</p>`)
+              )
+              .addTo(map.current)
+          }
+        })
       })
-    })
+    }
 
     return () => {
       if (map.current) {
