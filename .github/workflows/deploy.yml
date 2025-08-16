@@ -39,12 +39,17 @@ jobs:
       - name: Build app
         run: npm run build --workspace=app
 
+      - name: Build Storybook
+        run: npm run build-storybook --workspace=lib
+
       - name: Combine builds for GitHub Pages
         run: |
           mkdir -p combined-build
           cp -r docs/build/* combined-build/
           mkdir -p combined-build/app
           cp -r app/dist/* combined-build/app/
+          mkdir -p combined-build/storybook
+          cp -r lib/storybook-static/* combined-build/storybook/
 
       - name: Upload combined artifact
         uses: actions/upload-pages-artifact@v3

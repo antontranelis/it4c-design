@@ -143,3 +143,6 @@ build
 .tmp
 .temp
 .aider*
+
+*storybook.log
+storybook-static

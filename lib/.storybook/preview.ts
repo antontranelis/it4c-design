@@ -1,0 +1,36 @@
+import type { Preview } from '@storybook/react-vite'
+import { createElement } from 'react'
+import { MemoryRouter } from 'react-router-dom'
+
+const preview: Preview = {
+  parameters: {
+    controls: {
+      matchers: {
+       color: /(background|color)$/i,
+       date: /Date$/i,
+      },
+    },
+    backgrounds: {
+      default: 'light',
+      values: [
+        {
+          name: 'light',
+          value: '#ffffff',
+        },
+        {
+          name: 'dark',
+          value: '#1a1a1a',
+        },
+      ],
+    },
+  },
+  decorators: [
+    (Story) => createElement(
+      MemoryRouter,
+      { initialEntries: ['/'] },
+      createElement('div', { 'data-theme': 'light' }, createElement(Story))
+    ),
+  ],
+};
+
+export default preview;
