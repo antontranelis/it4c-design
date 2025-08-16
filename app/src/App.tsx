@@ -13,6 +13,7 @@ import {
   SettingsPage,
   MessagesPage
 } from '@it4c-design/components'
+import { config } from './config'
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)

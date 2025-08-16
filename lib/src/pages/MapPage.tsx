@@ -17,7 +17,8 @@ export default function MapPage() {
   useEffect(() => {
     const fetchLocations = async () => {
       try {
-        const res = await fetch('/posts.json')
+        const baseUrl = (window as any).API_BASE_URL || ''
+        const res = await fetch(`${baseUrl}/posts.json`)
         if (res.ok) {
           const data = await res.json()
           setLocations(data.locations || [])
