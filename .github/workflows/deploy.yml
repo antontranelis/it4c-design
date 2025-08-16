@@ -47,10 +47,10 @@ jobs:
           YARN_NODE_LINKER=node-modules yarn install --immutable
 
       - name: Build docs
-        run: yarn workspace docs build
+        run: YARN_NODE_LINKER=node-modules yarn workspace docs build
 
       - name: Build app
-        run: yarn workspace app build
+        run: YARN_NODE_LINKER=node-modules yarn workspace app build
 
       - name: Combine builds for GitHub Pages
         run: |
