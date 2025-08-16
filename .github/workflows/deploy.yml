@@ -42,10 +42,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Install dependencies
+      - name: Configure Yarn for CI
         run: |
-          yarn install --immutable
-          yarn dlx @yarnpkg/sdks vscode
+          echo "nodeLinker: node-modules" > .yarnrc.yml
+          echo "enableGlobalCache: false" >> .yarnrc.yml
+
+      - name: Install dependencies
+        run: yarn install
 
       - name: Build docs
         run: yarn workspace docs build
