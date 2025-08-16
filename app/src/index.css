@@ -2,4 +2,5 @@
 @plugin "daisyui";
 
 /* Use workspace reference for library components */
-@source "@it4c-design/components/src/*.tsx";
+@source "../../lib/src/components/*.tsx";
+@source "../../lib/src/pages/*.tsx";

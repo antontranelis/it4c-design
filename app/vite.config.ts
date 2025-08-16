@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }: { mode: string }) => ({
   plugins: [react(), tailwindcss()],
-  base: process.env.NODE_ENV === 'production' ? '/it4c-design/app/' : '/',
-})
+  base: mode === 'production' ? '/it4c-design/app/' : '/',
+}))
