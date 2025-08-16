@@ -13,13 +13,14 @@ import {
   SettingsPage,
   MessagesPage
 } from '@it4c-design/components'
-import { config } from './config'
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
+  const basename = import.meta.env.PROD ? '/it4c-design/app' : ''
+
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="flex h-screen overflow-hidden">
         <div className="flex flex-col flex-1 overflow-hidden">
           <Navbar onToggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
