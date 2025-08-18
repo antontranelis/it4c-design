@@ -146,3 +146,6 @@ build
 
 *storybook.log
 storybook-static
+
+# claude
+.claude

@@ -12,9 +12,7 @@ A unified design system and component library supporting both social platforms (
 it4c-design/
 ├── lib/           # Shared React components & TypeScript types
 ├── app/           # Demo application & prototypes
-├── docs/          # Design system documentation (Docusaurus)
-├── spec/          # API specifications & data models
-└── prototype/     # Legacy Vue prototypes
+└── docs/          # Design system documentation (Docusaurus)
 ```
 
 ## Live
