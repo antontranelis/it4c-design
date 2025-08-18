@@ -19,11 +19,15 @@ it4c-design/
 
 ## Live
 
+The content of this repository is deployed to GitHub pages
+
 [Docs](https://antontranelis.github.io/it4c-design/) (`/docs`)
 
 [Design Prototype](https://antontranelis.github.io/it4c-design/app/) (`/app`)
 
 [Storybook](https://antontranelis.github.io/it4c-design/storybook/) (`/lib`)
+
+Push to this repository to make your changes!
 
 ## ✨ Features
 
