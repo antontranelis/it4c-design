@@ -47,8 +47,7 @@ it4c-design/
 
 ### Development Setup
 ```bash
-# Install dependencies
-npm install
+
 
 # Start development server
 cd app
@@ -76,27 +75,7 @@ function App() {
 }
 ```
 
-## 🤝 Projects Using This System
 
-### [Utopia Map](https://utopia-map.org/)
-Platform for mapping and connecting sustainable initiatives and communities worldwide.
-
-### [Ocelot Social](https://ocelot.social/)
-Social network focused on activism, community organizing, and social change.
-
-## 🏢 Organizations
-
-**Maintained by:**
-- **[BusFaktor()](https://www.busfaktor.org/)** - Sustainable software development
-- **[IT4Change](https://it4c.dev/)** - Technology for social change
-
-## 🎯 Impact
-
-By unifying development efforts:
-- **Faster feature development** through shared components
-- **Consistent user experience** across platforms
-- **Efficient resource utilization** and developer collaboration
-- **Amplified impact** for social change initiatives
 
 ---
 
