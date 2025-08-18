@@ -19,7 +19,7 @@ it4c-design/
 
 ## Live
 
-The content of this repository is deployed to GitHub pages
+The content of this repository is deployed to GitHub Pages:
 
 [Docs](https://antontranelis.github.io/it4c-design/) (`/docs`)
 
