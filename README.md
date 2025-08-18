@@ -17,6 +17,12 @@ it4c-design/
 └── prototype/     # Legacy Vue prototypes
 ```
 
+## Live
+
+[Docs](https://antontranelis.github.io/it4c-design/) (`/docs`)
+[Design Prototype](https://antontranelis.github.io/it4c-design/app/) (`/app`)
+[Storybook](https://antontranelis.github.io/it4c-design/storybook/) (`/lib`)
+
 ## ✨ Features
 
 ### 🎨 **Design System Components**
