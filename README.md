@@ -27,9 +27,10 @@ it4c-design/
 
 ### 🎨 **Design System Components**
 - **Post & Feed** components for social content
+- **Map** components for geograpic real life data
 - **User management** with friends and status
 - **Interactive UI elements** (likes, comments, shares)
-- **Navigation** (Sidebar, Navbar) 
+- **App Shell** (Sidebar, Navbar) 
 - **Page layouts** (Calendar, Market, Profile, etc.)
 
 ### 🏛️ **Shared Architecture**
@@ -73,10 +74,4 @@ function App() {
     </AppProvider>
   )
 }
-```
-
-
-
----
-
-*Building technology that brings people together for a better world. 🌱*
+``
