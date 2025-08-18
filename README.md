@@ -15,7 +15,7 @@ it4c-design/
 └── docs/          # Design system documentation (Docusaurus)
 ```
 
-## Live
+## Show live
 
 The content of this repository is deployed to GitHub Pages:
 
@@ -26,6 +26,24 @@ The content of this repository is deployed to GitHub Pages:
 [Storybook](https://antontranelis.github.io/it4c-design/storybook/) (`/lib`)
 
 Push to this repository to make your changes!
+
+## 🚀 Run local
+
+```bash
+
+
+# Start development server
+cd app
+npm run dev
+
+# Run Storybook
+cd lib
+npm run storybook
+
+# Start documentation site
+cd docs
+npm run docs:dev
+```
 
 ## ✨ Features
 
@@ -47,22 +65,3 @@ Push to this repository to make your changes!
 - **Storybook** for component development and testing
 - **Docusaurus** for design system documentation
 - **Consistent development workflow** for both projects
-
-## 🚀 Getting Started
-
-### Development Setup
-```bash
-
-
-# Start development server
-cd app
-npm run dev
-
-# Run Storybook
-cd lib
-npm run storybook
-
-# Start documentation site
-cd docs
-npm run docs:dev
-```
