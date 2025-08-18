@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react'
-import { useAppContext } from '../contexts/AppContext'
 import Post from './Post'
 import { Post as PostType } from '../types'
 
 export default function Feed() {
   const [posts, setPosts] = useState<PostType[]>([])
-  const { getUserById } = useAppContext()
 
   useEffect(() => {
     const fetchPosts = async () => {

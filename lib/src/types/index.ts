@@ -7,6 +7,3 @@ export * from './Message'
 export * from './User'
 export * from './Location'
 export * from './Api'
-
-// Re-export for backwards compatibility
-export type { Item as MarketItem }

@@ -12,8 +12,7 @@ export default function Post({ post, className = '' }: PostProps) {
   const [liked, setLiked] = useState(false)
   const [thumbsUp, setThumbsUp] = useState(false)
   const [likes, setLikes] = useState(Math.floor(Math.random() * 50) + 1)
-  const [comments, setComments] = useState(Math.floor(Math.random() * 20) + 1)
-  const [views, setViews] = useState(Math.floor(Math.random() * 100) + 10)
+  const [views] = useState(Math.floor(Math.random() * 100) + 10)
 
   const handleLike = () => {
     setLiked(!liked)
