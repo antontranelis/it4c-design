@@ -5,8 +5,10 @@
       "title": "Hiking Adventure",
       "text": "Exploring the beautiful mountain trails today!",
       "user": {
-        "username": "Alice",
-        "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-1.jpg"
+        "id": "1",
+        "username": "alice_hiker",
+        "name": "Alice",
+        "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-1.jpg"
       }
     },
     {
@@ -14,8 +16,10 @@
       "title": "Delicious Breakfast",
       "text": "Nothing beats homemade pancakes on a Sunday morning.",
       "user": {
-        "username": "Bob",
-        "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-2.jpg"
+        "id": "2",
+        "username": "bob_chef",
+        "name": "Bob",
+        "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-2.jpg"
       }
     },
     {
@@ -23,8 +27,10 @@
       "title": "City Lights",
       "text": "Captured the skyline during my evening walk downtown.",
       "user": {
-        "username": "Charlie",
-        "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-3.jpg"
+        "id": "3",
+        "username": "charlie_photo",
+        "name": "Charlie",
+        "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-3.jpg"
       }
     },
     {
@@ -32,8 +38,10 @@
       "title": "Road Trip",
       "text": "Starting our cross-country journey today!",
       "user": {
-        "username": "Diana",
-        "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-4.jpg"
+        "id": "4",
+        "username": "diana_travel",
+        "name": "Diana",
+        "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-4.jpg"
       }
     },
     {
@@ -41,26 +49,11 @@
       "title": "Garden Harvest",
       "text": "Fresh veggies straight from the backyard garden.",
       "user": {
-        "username": "Edgar",
-        "profile": "https://techzaa.in/rasket/admin/assets/images/users/avatar-5.jpg"
+        "id": "5",
+        "username": "edgar_garden",
+        "name": "Edgar",
+        "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-5.jpg"
       }
-    }
-  ],
-  "friends": [
-    {
-      "name": "Alice",
-      "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-1.jpg",
-      "status": "online"
-    },
-    {
-      "name": "Bob",
-      "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-2.jpg",
-      "status": "offline"
-    },
-    {
-      "name": "Charlie",
-      "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-3.jpg",
-      "status": "busy"
     }
   ],
   "groups": [
@@ -119,11 +112,57 @@
     { "from": "me", "text": "Hello!" },
     { "from": "them", "text": "How are you?" }
   ],
-  "user": {
-    "name": "John Doe",
-    "bio": "Enthusiastic traveler and photographer.",
-    "avatar": "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-  },
+  "users": [
+    {
+      "id": "current_user",
+      "username": "john_doe",
+      "name": "John Doe",
+      "bio": "Enthusiastic traveler and photographer.",
+      "avatar": "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp",
+      "friends": ["1", "2", "3"]
+    },
+    {
+      "id": "1",
+      "username": "alice_hiker",
+      "name": "Alice",
+      "bio": "Love hiking and outdoor adventures!",
+      "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-1.jpg",
+      "friends": ["current_user", "2", "4"]
+    },
+    {
+      "id": "2", 
+      "username": "bob_chef",
+      "name": "Bob",
+      "bio": "Cooking enthusiast and food blogger.",
+      "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-2.jpg",
+      "friends": ["current_user", "1", "3", "5"]
+    },
+    {
+      "id": "3",
+      "username": "charlie_photo",
+      "name": "Charlie", 
+      "bio": "Street photographer capturing city life.",
+      "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-3.jpg",
+      "friends": ["current_user", "2"]
+    },
+    {
+      "id": "4",
+      "username": "diana_travel",
+      "name": "Diana",
+      "bio": "World traveler and adventure seeker.",
+      "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-4.jpg",
+      "friends": ["1", "5"]
+    },
+    {
+      "id": "5",
+      "username": "edgar_garden",
+      "name": "Edgar",
+      "bio": "Gardening expert and nature lover.",
+      "avatar": "https://techzaa.in/rasket/admin/assets/images/users/avatar-5.jpg",
+      "friends": ["2", "4"]
+    }
+  ],
+  "currentUserId": "current_user",
   "locations": [
     {
       "id": 1,

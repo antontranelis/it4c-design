@@ -11,7 +11,8 @@ import {
   CalendarPage,
   ProfilePage,
   SettingsPage,
-  MessagesPage
+  MessagesPage,
+  AppProvider
 } from '@it4c-design/components'
 
 function App() {
@@ -20,29 +21,31 @@ function App() {
   const basename = import.meta.env.PROD ? '/it4c-design/app' : ''
 
   return (
-    <Router basename={basename}>
-      <div className="flex h-screen overflow-hidden">
-        <div className="flex flex-col flex-1 overflow-hidden">
-          <Navbar onToggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
-          <div className="flex h-full">
-            <Sidebar open={sidebarOpen} />
-            <div className="flex-1 bg-base-200 transition-all duration-300 overflow-auto p-4">
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/map" element={<MapPage />} />
-                <Route path="/friends" element={<FriendsPage />} />
-                <Route path="/groups" element={<GroupsPage />} />
-                <Route path="/market" element={<MarketPage />} />
-                <Route path="/calendar" element={<CalendarPage />} />
-                <Route path="/profile" element={<ProfilePage />} />
-                <Route path="/settings" element={<SettingsPage />} />
-                <Route path="/messages" element={<MessagesPage />} />
-              </Routes>
+    <AppProvider>
+      <Router basename={basename}>
+        <div className="flex h-screen overflow-hidden">
+          <div className="flex flex-col flex-1 overflow-hidden">
+            <Navbar onToggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
+            <div className="flex h-full">
+              <Sidebar open={sidebarOpen} />
+              <div className="flex-1 bg-base-200 transition-all duration-300 overflow-auto p-4">
+                <Routes>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/map" element={<MapPage />} />
+                  <Route path="/friends" element={<FriendsPage />} />
+                  <Route path="/groups" element={<GroupsPage />} />
+                  <Route path="/market" element={<MarketPage />} />
+                  <Route path="/calendar" element={<CalendarPage />} />
+                  <Route path="/profile" element={<ProfilePage />} />
+                  <Route path="/settings" element={<SettingsPage />} />
+                  <Route path="/messages" element={<MessagesPage />} />
+                </Routes>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </AppProvider>
   )
 }
 

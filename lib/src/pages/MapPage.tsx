@@ -2,13 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import * as maplibregl from 'maplibre-gl'
 import { Map } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
-
-interface Location {
-  id: number
-  coordinates: [number, number]
-  title: string
-  description: string
-}
+import { Location } from '../types'
 
 export default function MapPage() {
   const mapContainer = useRef<HTMLDivElement>(null)

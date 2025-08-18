@@ -1,10 +1,5 @@
 import { useState, useEffect } from 'react'
-
-interface Item {
-  name: string
-  price: string
-  image: string
-}
+import { Item } from '../types'
 
 export default function MarketPage() {
   const [items, setItems] = useState<Item[]>([])

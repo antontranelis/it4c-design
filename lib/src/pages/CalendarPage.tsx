@@ -1,21 +1,8 @@
 import { useState, useEffect } from 'react'
 import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ClockIcon, EllipsisHorizontalIcon } from '@heroicons/react/20/solid'
+import { CalendarDay } from '../types'
 
-interface CalendarEvent {
-  id: number
-  name: string
-  time: string
-  datetime: string
-  href: string
-}
-
-interface Day {
-  date: string
-  isCurrentMonth?: boolean
-  isToday?: boolean
-  isSelected?: boolean
-  events: CalendarEvent[]
-}
+type Day = CalendarDay
 
 export default function CalendarPage() {
   const [days, setDays] = useState<Day[]>([])

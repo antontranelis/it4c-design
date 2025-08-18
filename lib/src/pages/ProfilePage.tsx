@@ -1,10 +1,5 @@
 import { useState, useEffect } from 'react'
-
-interface User {
-  name: string
-  bio: string
-  avatar: string
-}
+import { User } from '../types'
 
 export default function ProfilePage() {
   const [user, setUser] = useState<User | null>(null)

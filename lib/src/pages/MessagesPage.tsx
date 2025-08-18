@@ -1,9 +1,5 @@
 import { useState, useEffect } from 'react'
-
-interface Message {
-  from: 'me' | 'them'
-  text: string
-}
+import { Message } from '../types'
 
 export default function MessagesPage() {
   const [messages, setMessages] = useState<Message[]>([])
