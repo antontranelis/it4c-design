@@ -1,8 +1,10 @@
 # IT4C Design System
 
-Shared Design System for Utopia and Ocelot
+**Shared Design System for Utopia and Ocelot**
+
 A unified design system and component library supporting both social platforms (Utopia-Map and Ocelot.social).
-Goal: Eliminate duplicate work, leverage synergies, and use resources more efficiently, as both projects share the same mission - connecting people for positive social change.
+
+**Goal:** Eliminate duplicate work, leverage synergies, and use resources more efficiently, as both projects share the same mission - connecting people for positive social change.
 
 ## 🏗️ Architecture
 
