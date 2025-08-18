@@ -44,24 +44,3 @@ npm run storybook
 cd docs
 npm run docs:dev
 ```
-
-## ✨ Features
-
-### 🎨 **Design System Components**
-- **Post & Feed** components for social content
-- **Map** components for geograpic real life data
-- **User management** with friends and status
-- **Interactive UI elements** (likes, comments, shares)
-- **App Shell** (Sidebar, Navbar) 
-- **Page layouts** (Calendar, Market, Profile, etc.)
-
-### 🏛️ **Shared Architecture**
-- **Unified user types** and data models
-- **Global application state** management
-- **Consistent API interfaces**
-- **TypeScript types** for type safety across projects
-
-### 📚 **Documentation & Development**
-- **Storybook** for component development and testing
-- **Docusaurus** for design system documentation
-- **Consistent development workflow** for both projects
