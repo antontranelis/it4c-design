@@ -66,16 +66,3 @@ npm run storybook
 cd docs
 npm run docs:dev
 ```
-
-### Using Components
-```typescript
-import { Post, Feed, AppProvider } from '@it4c-design/components'
-
-function App() {
-  return (
-    <AppProvider>
-      <Feed />
-    </AppProvider>
-  )
-}
-```
