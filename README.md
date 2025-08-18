@@ -30,8 +30,6 @@ Push to this repository to make your changes!
 ## 🚀 Run local
 
 ```bash
-
-
 # Start development server
 cd app
 npm run dev
