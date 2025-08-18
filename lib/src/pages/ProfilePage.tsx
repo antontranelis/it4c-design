@@ -1,18 +1,47 @@
+import { useState, useEffect } from 'react'
+
+interface User {
+  name: string
+  bio: string
+  avatar: string
+}
+
 export default function ProfilePage() {
+  const [user, setUser] = useState<User | null>(null)
+
+  useEffect(() => {
+    const loadUser = async () => {
+      try {
+        const baseUrl = (window as any).API_BASE_URL || ''
+        const res = await fetch(`${baseUrl}/posts.json`)
+        if (res.ok) {
+          const data = await res.json()
+          setUser(data.user || null)
+        }
+      } catch (err) {
+        console.error('Failed to load user', err)
+      }
+    }
+
+    loadUser()
+  }, [])
+
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6">Profile</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="card bg-base-100 shadow-xl">
-          <div className="card-body">
-            <h2 className="card-title">User Profile</h2>
-            <p>Manage your profile information and settings.</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Coming Soon</button>
+    <div className="flex justify-center">
+      {user && (
+        <div className="card w-full max-w-md bg-base-100 shadow">
+          <figure className="px-10 pt-10">
+            <img src={user.avatar} alt={user.name} className="rounded-full w-32" />
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">{user.name}</h2>
+            <p>{user.bio}</p>
+            <div className="card-actions">
+              <button className="btn btn-sm">Follow</button>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   )
 }

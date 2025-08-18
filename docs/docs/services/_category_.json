@@ -2,6 +2,7 @@
   "label": "Services",
   "position": 4,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Backend Services that could exist as a distinct Microservice"
   }
 }
