@@ -13,7 +13,7 @@ export default function FriendsPage() {
   }
 
   return (
-    <div className="flex justify-center max-w-8xl w-full">
+    <div className="flex justify-center max-w-8xl w-full  p-4">
       <div className="max-w-6xl">
         <div className="mb-6">
           <h1 className="text-2xl font-bold">

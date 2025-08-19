@@ -22,7 +22,7 @@ export default function GroupsPage() {
   }, [])
 
   return (
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full  p-4">
       <div className="max-w-6xl">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {groups.map((group) => (

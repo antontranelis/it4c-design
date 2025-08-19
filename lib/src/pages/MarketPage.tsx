@@ -22,7 +22,7 @@ export default function MarketPage() {
   }, [])
 
   return (
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full  p-4">
       <div className="grid gap-4 max-w-6xl sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
           <div

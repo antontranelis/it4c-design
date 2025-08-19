@@ -35,7 +35,7 @@ export default function MessagesPage() {
   }
 
   return (
-    <div className="flex flex-col gap-4 h-full">
+    <div className="flex flex-col gap-4 h-full p-4">
       <div className="flex-1 overflow-y-auto space-y-2">
         {messages.map((msg, i) => (
           <div

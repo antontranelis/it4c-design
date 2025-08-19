@@ -11,7 +11,7 @@ export default function SettingsPage() {
   }
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center  p-4">
       <form className="space-y-4 max-w-md" onSubmit={handleSubmit}>
         <div className="form-control">
           <label className="label cursor-pointer">

@@ -28,7 +28,7 @@ function App() {
             <Navbar onToggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
             <div className="flex h-full">
               <Sidebar open={sidebarOpen} />
-              <div className="flex-1 bg-base-200 transition-all duration-300 overflow-auto p-4">
+              <div className="flex-1 bg-base-200 transition-all duration-300 overflow-auto">
                 <Routes>
                   <Route path="/" element={<HomePage />} />
                   <Route path="/map" element={<MapPage />} />

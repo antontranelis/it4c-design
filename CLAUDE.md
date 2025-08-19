@@ -36,7 +36,7 @@ it4c-design/ (npm workspace root)
 - **Storybook 9** for component development
 - **React Router 7** for navigation
 - **Heroicons** for icons
-- **MapLibre GL** for map components
+- **Utopia UI** for interactive map components
 
 ## Important Development Patterns
 

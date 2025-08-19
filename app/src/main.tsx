@@ -4,10 +4,16 @@ import './index.css'
 import App from './App.tsx'
 
 // Set global API base URL for production
+declare global {
+  interface Window {
+    API_BASE_URL: string
+  }
+}
+
 if (import.meta.env.PROD) {
-  (window as any).API_BASE_URL = '/it4c-design/app'
+  window.API_BASE_URL = '/it4c-design/app'
 } else {
-  (window as any).API_BASE_URL = ''
+  window.API_BASE_URL = ''
 }
 
 createRoot(document.getElementById('root')!).render(

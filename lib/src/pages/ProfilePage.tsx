@@ -22,7 +22,7 @@ export default function ProfilePage() {
   }, [])
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center  p-4">
       {user && (
         <div className="card w-full max-w-md bg-base-100 shadow">
           <figure className="px-10 pt-10">
