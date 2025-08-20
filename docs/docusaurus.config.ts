@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Core',
-  tagline: 'Ocelot & Utopia',
+  title: 'IT4Change',
+  tagline: 'Software für den gesellschaftlichen Wandel',
   favicon: 'img/dandelion.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -23,7 +23,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'IT4C', // Usually your GitHub org/user name.
-  projectName: 'core', // Usually your repo name.
+  projectName: 'it4c-design', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -56,7 +56,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/antontranelis/it4c-design/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -73,10 +73,10 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Core',
+      title: 'IT4Change',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/dandelion.png',
+        src: 'img/sunflower-flower.svg',
       },
       items: [
         {
@@ -131,7 +131,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/antontranelis/it4c-design',
             },
           ],
         },

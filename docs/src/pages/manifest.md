@@ -1,14 +1,6 @@
 # IT4Change Manifest
 
-
-**Freie Software für freie Menschen – Werkzeuge für den gesellschaftlichen Wandel.**
-Wir glauben, dass Technologie ein Instrument sein kann, das Menschen verbindet, stärkt und befähigt, gemeinsam eine gerechtere, solidarische und nachhaltige Gesellschaft zu gestalten.
-
-Unsere Mission ist es, **digitale Infrastrukturen von unten nach oben** zu entwickeln – offen, dezentral, widerstandsfähig und im Dienste der Menschen.
-
 ---
-
-## Unsere Prinzipien
 
 ### 1. Echte Verbindungen schaffen
 
@@ -25,7 +17,7 @@ Einladungen, Web of Trust und rechtliche wie technische Zensurresistenz bilden d
 Wir stellen Werkzeuge bereit, mit denen Menschen ihre eigenen Strukturen schaffen können – unabhängig von zentralen Plattformen oder Konzernen.
 Digitale Souveränität und Wissen über Selbstorganisation sind Kern unserer Arbeit.
 
-### 4. Gemeinsame Werte leben
+### 4. Gemeinsame Werte erschaffen
 
 Unsere Plattformen fördern Solidarität, Gemeinschaft und Kooperation:
 
