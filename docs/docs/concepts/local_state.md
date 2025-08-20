@@ -1,0 +1,2 @@
+- [ ] optimistic updates
+- [ ] Zustand/Redux/etc.
